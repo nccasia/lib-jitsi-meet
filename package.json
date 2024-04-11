@@ -1,10 +1,10 @@
 {
-  "name": "lib-jitsi-meet",
-  "version": "0.0.0",
+  "name": "lib-mezon-meet",
+  "version": "1.0.0",
   "description": "JS library for accessing Jitsi server side deployments",
   "repository": {
     "type": "git",
-    "url": "git://github.com/jitsi/lib-jitsi-meet"
+    "url": "git://github.com/jitsi/lib-jitsi-meet.git"
   },
   "keywords": [
     "jingle",
@@ -13,13 +13,12 @@
     "browser",
     "jitsi"
   ],
-  "author": "",
-  "readmeFilename": "README.md",
+  "author": "Jitsi Meet",
   "dependencies": {
     "@jitsi/js-utils": "2.2.1",
     "@jitsi/logger": "2.0.2",
     "@jitsi/rtcstats": "9.7.0",
-    "@jitsi/sdp-interop": "git+https://github.com/jitsi/sdp-interop#3d49eb4aa26863a3f8d32d7581cdb4321244266b",
+    "@jitsi/sdp-interop": "git+https://github.com/jitsi/sdp-interop.git#3d49eb4aa26863a3f8d32d7581cdb4321244266b",
     "@testrtc/watchrtc-sdk": "1.36.3",
     "async-es": "3.2.4",
     "base64-js": "1.3.1",
@@ -33,7 +32,7 @@
     "sdp-transform": "2.3.0",
     "strophe.js": "1.5.0",
     "strophejs-plugin-disco": "0.0.2",
-    "strophejs-plugin-stream-management": "git+https://github.com/jitsi/strophejs-plugin-stream-management#679be5902097ed612fb5062b5549f3f32b6f5f47",
+    "strophejs-plugin-stream-management": "git+https://github.com/jitsi/strophejs-plugin-stream-management.git#679be5902097ed612fb5062b5549f3f32b6f5f47",
     "uuid": "8.1.0",
     "webrtc-adapter": "8.1.1"
   },
@@ -77,7 +76,7 @@
     "test-watch": "karma start karma.conf.js --no-single-run",
     "validate": "npm ls",
     "watch": "webpack --config webpack.config.js --watch --mode development",
-    "mezon":"npm run build && npm run gen-types && cp -rf types/hand-crafted/* dist/esm/"
+    "mezon": "npm run build && npm run gen-types && cp -rf types/hand-crafted/* dist/esm/"
   },
   "browser": "dist/umd/lib-jitsi-meet.min.js",
   "module": "dist/esm/JitsiMeetJS.js",
@@ -86,5 +85,13 @@
     "types",
     "index.d.ts"
   ],
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/jitsi/lib-jitsi-meet/issues"
+  },
+  "homepage": "https://github.com/jitsi/lib-jitsi-meet#readme",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  }
 }
